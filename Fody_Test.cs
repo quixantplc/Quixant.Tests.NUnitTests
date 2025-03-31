@@ -15,7 +15,7 @@ namespace TestNUnitCallback
         public void Test_Open()
         {
             MockStaticInterceptorAttribute.MockMethod("Open", args => 999); // here we can return a call against the c++ bridge which return back the params we sent to our mocked function
-
+            
             int result = 0;
 
             try

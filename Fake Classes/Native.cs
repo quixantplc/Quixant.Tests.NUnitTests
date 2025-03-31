@@ -1,4 +1,6 @@
-﻿using TestNUnitCallback.Helpers;
+﻿using NUnit.Framework.Constraints;
+using TestNUnitCallback.Helpers;
+using static TestNUnitCallback.Fake_Classes.Wrapper_Library;
 
 namespace TestNUnitCallback.Fake_Classes
 {
@@ -16,6 +18,31 @@ namespace TestNUnitCallback.Fake_Classes
         {
             Console.WriteLine("Close Called");
             return 0;
+        }
+
+        public static int GetInventory(nint handle, out Inventory inventory)
+        {
+            inventory = new Inventory
+            {
+                library_version = 0,
+                port_name = new PortNameBuffer()
+            };
+            return 0;
+        }
+
+        public static int SetParameters(nint handle, Inventory inventory)
+        {
+            return 0;
+        }
+
+        public static int SetEventMask(nint handle, CALLBACK inventory)
+        {
+            return 0;
+        }
+
+        internal static void GetInventory(ExactTypeConstraint exactTypeConstraint, out Inventory inventory_mock)
+        {
+            throw new NotImplementedException();
         }
     }
 
