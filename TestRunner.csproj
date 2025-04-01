@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="001-TestRunner-NUnit\**" />
+    <Compile Remove="002-DotNetWrapper\**" />
+    <Compile Remove="003-MockedLib\**" />
+    <Compile Remove="MockedLib\**" />
+    <Compile Remove="x64\**" />
+    <EmbeddedResource Remove="001-TestRunner-NUnit\**" />
+    <EmbeddedResource Remove="002-DotNetWrapper\**" />
+    <EmbeddedResource Remove="003-MockedLib\**" />
+    <EmbeddedResource Remove="MockedLib\**" />
+    <EmbeddedResource Remove="x64\**" />
+    <None Remove="001-TestRunner-NUnit\**" />
+    <None Remove="002-DotNetWrapper\**" />
+    <None Remove="003-MockedLib\**" />
+    <None Remove="MockedLib\**" />
+    <None Remove="x64\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="002-DotNetWrapper\DotNetWrapper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="NUnit.Framework" />
+  </ItemGroup>
+
+</Project>

@@ -62,3 +62,8 @@ NATIVE_LIB_API QRESULT nativeFunction2(LIB_HANDLE handle, STRUCT1 struct1);
 NATIVE_LIB_API QRESULT nativeFunction3(LIB_HANDLE handle, PSTRUCT2 struct2);
 NATIVE_LIB_API QRESULT nativeFunction4(LIB_HANDLE handle, STRUCT3 struct3);
 NATIVE_LIB_API QRESULT nativeFunction5(int integerVal);
+
+typedef unsigned int (native_callback)(char* methodName, int paramValue);
+
+static native_callback* callback; // Declare callback as a static variable
+NATIVE_LIB_API void set_native_callback(native_callback* callback);
