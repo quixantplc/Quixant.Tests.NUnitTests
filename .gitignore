@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs
+/004-FactoryHelper/FactoryHelper/.vs/FactoryHelper
+/002-DotNetWrapper/.vs
+/bin/Debug
+/lib/Debug
+/obj
+/out/build/x64-Debug
+/x64/Debug
