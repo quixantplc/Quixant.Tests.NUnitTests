@@ -1,0 +1,3 @@
+C:/Progetti/Quixant.Tests.NUnitTests/out/build/x64-Debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+C:/Progetti/Quixant.Tests.NUnitTests/out/build/x64-Debug/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+C:/Progetti/Quixant.Tests.NUnitTests/out/build/x64-Debug/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
