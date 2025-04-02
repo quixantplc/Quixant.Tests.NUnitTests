@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework.Constraints;
 using TestNUnitCallback.Helpers;
-using static TestNUnitCallback.Fake_Classes.Wrapper_Library;
+using static TestNUnitCallback.Fake_Classes.WrapperLibrary;
 
 namespace TestNUnitCallback.Fake_Classes
 {

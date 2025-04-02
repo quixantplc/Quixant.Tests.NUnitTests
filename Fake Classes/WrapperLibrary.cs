@@ -1,12 +1,10 @@
-﻿using System.Reflection.Metadata;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Xml.Linq;
 
 namespace TestNUnitCallback.Fake_Classes
 {
-    public class Wrapper_Library
+    public class WrapperLibrary
     {
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         internal delegate void CALLBACK(nint sourcePort, ushort eventMask);

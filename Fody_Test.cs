@@ -20,7 +20,7 @@ namespace TestNUnitCallback
 
             try
             {
-                var wrapper = new Wrapper_Library();
+                var wrapper = new WrapperLibrary();
                 result = wrapper.Open();
             }
             catch (ReturnValueException e)
@@ -43,7 +43,7 @@ namespace TestNUnitCallback
                 throw new InvalidOperationException("Mock Error");
             });
 
-            var wrapper = new Wrapper_Library();
+            var wrapper = new WrapperLibrary();
             var ex = Assert.Throws<InvalidOperationException>(() => wrapper.Open()); // doesn't work at the moment
             Assert.That(ex.Message, Is.EqualTo("Mock Error"));
         }

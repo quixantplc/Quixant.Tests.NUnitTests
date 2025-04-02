@@ -4,4 +4,4 @@
 
  ## NUnitTests
 
- This project contains a simple NUnit test project that tests a simple .NET wrapper. The wrapper is a simple class that wraps a native C++ class that has few static methods.
+ This project contains a simple NUnit test project that tests a .NET wrapper. The wrapper is a minimal class that wraps a native C++ class that has few static methods.

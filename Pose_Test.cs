@@ -3,7 +3,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using Pose;
 using TestNUnitCallback.Fake_Classes;
-using static TestNUnitCallback.Fake_Classes.Wrapper_Library;
+using static TestNUnitCallback.Fake_Classes.WrapperLibrary;
 
 namespace TestNUnitCallback
 {
@@ -22,7 +22,7 @@ namespace TestNUnitCallback
                 // All code that executes within this block
                 // is isolated and shimmed methods are replaced
 
-                var wrapper = new Wrapper_Library();
+                var wrapper = new WrapperLibrary();
                 result = wrapper.Open();
 
             }, openShim);
@@ -40,7 +40,7 @@ namespace TestNUnitCallback
             {
                 PoseContext.Isolate(() =>
                 {
-                    var wrapper = new Wrapper_Library();
+                    var wrapper = new WrapperLibrary();
                     wrapper.Open();
                     
                 }, openShim);
@@ -103,7 +103,7 @@ namespace TestNUnitCallback
             {
                 PoseContext.Isolate(() =>
                 {
-                    var wrapper = new Wrapper_Library();
+                    var wrapper = new WrapperLibrary();
                     results = wrapper.ComplexOpen();
 
                 }, openShim, getInventoryShim, setParamsShim, setEventMask, stringFormat, stringFormatArray);
