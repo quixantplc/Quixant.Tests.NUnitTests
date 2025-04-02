@@ -1,0 +1,10 @@
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\bin\Debug\net9.0\DotNetWrapper.deps.json
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\bin\Debug\net9.0\DotNetWrapper.dll
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\bin\Debug\net9.0\DotNetWrapper.pdb
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\obj\Debug\net9.0\DotNetWrapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\obj\Debug\net9.0\DotNetWrapper.csproj.CoreCompileInputs.cache
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\obj\Debug\net9.0\DotNetWrapper.sourcelink.json
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\obj\Debug\net9.0\DotNetWrapper.dll
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\obj\Debug\net9.0\refint\DotNetWrapper.dll
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\obj\Debug\net9.0\DotNetWrapper.pdb
+C:\Progetti\Quixant.Tests.NUnitTests\002-DotNetWrapper\DotNetWrapper\obj\Debug\net9.0\ref\DotNetWrapper.dll

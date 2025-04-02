@@ -13,6 +13,13 @@ public static class WrapperTesterHelper
 
 public class NonStaticWrapper
 {
+    int inutile = 0;
+
+    public NonStaticWrapper()
+    {
+        inutile = 5;
+    }
+
     public uint Function5(int integerVal)
     {
         return NativeLibWrapper.nativeFunction5(integerVal);

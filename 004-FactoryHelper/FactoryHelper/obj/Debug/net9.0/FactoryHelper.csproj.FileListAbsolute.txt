@@ -1,0 +1,12 @@
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\bin\Debug\net9.0\FactoryHelper.deps.json
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\bin\Debug\net9.0\FactoryHelper.dll
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\bin\Debug\net9.0\FactoryHelper.pdb
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\obj\Debug\net9.0\FactoryHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\obj\Debug\net9.0\FactoryHelper.AssemblyInfoInputs.cache
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\obj\Debug\net9.0\FactoryHelper.AssemblyInfo.cs
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\obj\Debug\net9.0\FactoryHelper.csproj.CoreCompileInputs.cache
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\obj\Debug\net9.0\FactoryHelper.sourcelink.json
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\obj\Debug\net9.0\FactoryHelper.dll
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\obj\Debug\net9.0\refint\FactoryHelper.dll
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\obj\Debug\net9.0\FactoryHelper.pdb
+C:\Progetti\Quixant.Tests.NUnitTests\004-FactoryHelper\FactoryHelper\obj\Debug\net9.0\ref\FactoryHelper.dll
