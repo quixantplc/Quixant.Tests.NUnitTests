@@ -10,7 +10,6 @@
 #include <iostream>
 #include <thread>
 #include <vector>
-#include <comdef.h>
 
 
 // Provided by the AppHost NuGet package and installed as an SDK pack
@@ -146,12 +145,6 @@ protected:
 load_assembly_and_get_function_pointer_fn TestBase::load_assembly_and_get_function_pointer = nullptr;
 string_t TestBase::root_path{};
 
-#if _WIN32
-#define TO_CHAR_PTR(s) (char*)_bstr_t(s)
-#else
-#define TO_CHAR_PTR(s) (char*)s
-#endif
-
 
 TEST_F(TestBase, testingNativeFunction5)
 {
@@ -199,8 +192,17 @@ TEST_F(TestBase, testingNativeFunction5WithFactory)
 		nullptr,
 		(void**)&custom);
 	assert(rc == 0 && custom != nullptr && "Failure: load_assembly_and_get_function_pointer()");
-	
-	auto res = custom(TO_CHAR_PTR(STR("DotNetWrapper")), TO_CHAR_PTR(STR("NativeLibWrapper")), TO_CHAR_PTR(STR("nativeFunction5")), 0, 10);
+	char assemblyName[20];
+	strcpy_s(assemblyName, sizeof(assemblyName), "DotNetWrapper");
+	assemblyName[sizeof(assemblyName) - 1] = '\0'; // Ensure null-termination
+	char typeName[20];
+	strcpy_s(typeName, sizeof(typeName), "NonStaticWrapper");
+	typeName[sizeof(typeName) - 1] = '\0'; // Ensure null-termination
+	char methodName[20];
+	strcpy_s(methodName, sizeof(methodName), "Function5");
+	methodName[sizeof(methodName) - 1] = '\0'; // Ensure null-termination
+	int param = 10;
+	auto res = custom(assemblyName, typeName, methodName, 0, &param);
 	EXPECT_EQ(*((int*)res), 2);
 }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FactoryHelper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f5082ac4501ce520d9d33b8ef9471d969ff9755")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e25439665004a6b2fc7b500e9cc7d8bbccc60ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("FactoryHelper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FactoryHelper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
