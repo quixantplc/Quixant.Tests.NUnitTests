@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using DotNetWrapper;
 
 namespace TestRunner
 {
@@ -34,20 +34,4 @@ namespace TestRunner
         }
     }
 
-    public partial class NativeBridge
-    {
-        private const string DllName = "MockedLib.dll";
-
-        [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-        public delegate uint native_callback(nint methodName, int handle);
-
-        [LibraryImport(DllName, EntryPoint = "set_native_callback")]
-        [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-        private static partial void set_native_callback(nint callbackPtr);
-
-        internal static void SetCallback(native_callback callback)
-        {
-            set_native_callback(Marshal.GetFunctionPointerForDelegate(callback));
-        }
-    }
 }

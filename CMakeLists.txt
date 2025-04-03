@@ -21,5 +21,5 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 
-add_subdirectory(003-MockedLib)
+add_subdirectory(MockedLib)
 add_subdirectory(001-TestRunner)

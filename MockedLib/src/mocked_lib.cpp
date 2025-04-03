@@ -16,3 +16,14 @@ NATIVE_LIB_API QRESULT nativeFunction5(int integerVal) {
 NATIVE_LIB_API void set_native_callback(native_callback* cb) {
     callback = cb; // Assign the pointer directly
 }
+
+NATIVE_LIB_API void fill_structures(KeyValuePairNative* dictionary, int count, int structSize)
+{
+    for (int i = 0; i < count; i++)
+    {
+        if (dictionary[i].key && dictionary[i].value)
+        {
+            std::memcpy(dictionary[i].key, dictionary[i].value, structSize); // Copia i dati
+        }
+    }
+}

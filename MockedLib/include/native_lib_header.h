@@ -55,6 +55,12 @@ typedef struct _STRUCT3
 	long long WriteTimeout;
 } STRUCT3, * PSTRUCT3;
 
+typedef struct KeyValuePairNative
+{
+	void* key;   // Puntatore alla struttura
+	void* value; // Puntatore ai dati da copiare
+} DICTIONARY_STRUCT, * PDICTIONARY_STRUCT;
+
 #pragma pack(pop)
 
 NATIVE_LIB_API QRESULT nativeFunction1(LIB_HANDLE* handle, char* charPointer);
